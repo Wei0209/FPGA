@@ -1,0 +1,8 @@
+module counter_Polynomial(iX, oResult);
+input [3:0] iX;
+output [7:0] oResult;
+
+wire wPolyVlue;
+
+assign oResult = iX*iX + 9*iX + 3;
+endmodule

@@ -1,0 +1,18 @@
+/*
+   設計實現y = x^2 + 3x + 1 的電路(Polynomial.v)，
+   1.其中x為兩位元輸入，x數值顯示在一顆七段顯示器上。
+   2.多項式y結果要輸出顯示在兩顆七段顯示器上。
+設計完後，請將腳位依照下面指示連接:
+    x接到SW[1:0]，
+    在7-seg上顯示數字x。
+    在7-seg上顯示數字多項式y的結果。*/
+
+module Polynomial(iX, oResult);
+
+input [1:0] iX;
+output [4:0] oResult;
+wire wPolyVlue;
+
+assign oResult = iX*iX + 3*iX +1;
+endmodule
+
